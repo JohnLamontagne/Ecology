@@ -84,16 +84,22 @@ namespace Ecology.World
             if (needs.IsSet(Needs.Eat))
             {
                 this.DoEat?.Invoke(gameTime);
+
+                return;
             }
 
             if (needs.IsSet(Needs.Shelter))
             {
                 this.DoFindShelter?.Invoke(gameTime);
+
+                return;
             }
 
             if (needs.IsSet(Needs.Produce))
             {
                 this.DoReproduce?.Invoke(gameTime);
+
+                return;
             }
 
             if (needs.IsSet(Needs.Desire))

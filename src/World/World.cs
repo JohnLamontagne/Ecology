@@ -17,7 +17,7 @@ namespace Ecology.World
         {
             this.LivingThings = new List<LivingThing>();
 
-            this.Size = new Vector2(800, 600);
+            this.Size = new Vector2(300, 300);
 
             this.Random = new Random();
 
